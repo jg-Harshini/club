@@ -31,105 +31,61 @@
 
     <body>
 
-        <!-- Spinner Start -->
+  <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
-        <!-- Spinner End -->
+      <!-- Normal Header (static) -->
+<div style="
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* NO position: fixed or sticky */
+  height: max-content;
+">
+  <div class="container d-flex align-items-center justify-content-between py-3">
 
+    <!-- Logo -->
+    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+      <img src="img/logo.jpg" alt="Logo" style="height: 60px;">
+    </a>
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
-            <div class="row gx-0 align-items-center">
-                <div class="col-lg-5 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex">
-                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>Example@gmail.com</a>
-                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
-                        <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center" style="height: 45px;">
-                        <a href="#" class="text-muted me-2"> Help</a><small> / </small>
-                        <a href="#" class="text-muted mx-2"> Support</a><small> / </small>
-                        <a href="#" class="text-muted ms-2"> Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
+    <!-- Navigation Links -->
+    <div style="display: flex; gap: 40px;">
+      <a href="index.html" class="nav-item" style="text-align: center; color: black; text-decoration: none; font-weight: 600;">
+        <i data-feather="home" style="stroke:#2A5D9F; width:36px; height:36px;"></i><br>Home
+      </a>
+      <a href="about.html" class="nav-item" style="text-align: center; color: black; text-decoration: none; font-weight: 600;">
+        <i data-feather="users" style="stroke:#E76F51; width:36px; height:36px;"></i><br>Clubs
+      </a>
+      <a href="service.html" class="nav-item" style="text-align: center; color: black; text-decoration: none; font-weight: 600;">
+        <i data-feather="calendar" style="stroke:#E9C46A; width:36px; height:36px;"></i><br>Events
+      </a>
+      <a href="login.html" class="nav-item" style="text-align: center; color: black; text-decoration: none; font-weight: 600;">
+        <i data-feather="log-in" style="stroke:#2A9D8F; width:36px; height:36px;"></i><br>Login
+      </a>
+    </div>
 
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">Travisa</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
-                            <div class="dropdown-menu m-0">
-                                <a href="feature.html" class="dropdown-item">Feature</a>
-                                <a href="countries.html" class="dropdown-item">Countries</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="training.html" class="dropdown-item">Training</a>
-                                <a href="404.html" class="dropdown-item">404 Page</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                    <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
-                </div>
-            </nav>
-        </div>
-        <!-- Navbar & Hero End -->
+  </div>
+</div>
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal Search End -->
+<!-- No extra padding needed because header is static -->
+ <!-- Feather Icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>feather.replace()</script>
+
 
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h1>
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">IOT CLUB</h1>
                 <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
-                    <li class="breadcrumb-item active text-secondary">About</li>
+                    <li class="breadcrumb-item active text-secondary">Clubs</li>
+                    <li class="breadcrumb-item"><a href="feature.html" class="text-white">Events</a></li>
+                    
                 </ol>    
             </div>
         </div>
@@ -141,37 +97,37 @@
                 <div class="row g-5">
                     <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
                         <div class="bg-light rounded">
-                            <img src="img/about-2.png" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
-                            <img src="img/about-3.jpg" class="img-fluid w-100 border-bottom border-5 border-primary" style="border-top-right-radius: 300px; border-top-left-radius: 300px;" alt="Image">
+                            <img src="iot.jpg" class="img-fluid w-100" style="margin-bottom: -7px;" alt="Image">
+                            
                         </div>
                     </div>
                     <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                        <h5 class="sub-title pe-3">About the company</h5>
-                        <h1 class="display-5 mb-4">We’re Trusted Immigration Consultant Agency.</h1>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe! Sequi asperiores rerum nemo!</p>
+                        <h5 class="sub-title pe-3">About the club</h5>
+                        <h1 class="display-5 mb-4">IoT Club: Bridging the Physical and Digital Worlds</h1>
+                        <p class="mb-4">The IoT Club is a student-driven community focused on exploring, innovating, and developing smart technologies by connecting the physical and digital worlds. The club empowers students to build IoT-based solutions through hands-on projects, workshops, and collaboration</p>
                         <div class="row gy-4 align-items-center">
                             <div class="col-12 col-sm-6 d-flex align-items-center">
                                 <i class="fas fa-map-marked-alt fa-3x text-secondary"></i>
-                                <h5 class="ms-4">Best Immigration Resources</h5>
+                                <h5 class="ms-4">MISION</h5>
                             </div>
                             <div class="col-12 col-sm-6 d-flex align-items-center">
                                 <i class="fas fa-passport fa-3x text-secondary"></i>
-                                <h5 class="ms-4">Return Visas Availabile</h5>
+                                <h5 class="ms-4">VISION</h5>
                             </div>
                             <div class="col-4 col-md-3">
                                 <div class="bg-light text-center rounded p-3">
                                     <div class="mb-2">
                                         <i class="fas fa-ticket-alt fa-4x text-primary"></i>
                                     </div>
-                                    <h1 class="display-5 fw-bold mb-2">34</h1>
-                                    <p class="text-muted mb-0">Years of Experience</p>
+                                    <h1 class="display-5 fw-bold mb-2">12</h1>
+                                    <p class="text-muted mb-0">Years</p>
                                 </div>
                             </div>
                             <div class="col-8 col-md-9">
                                 <div class="mb-5">
-                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Offer 100 % Genuine Assistance</p>
-                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> It’s Faster & Reliable Execution</p>
-                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Accurate & Expert Advice</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Promote Learning</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Encourage Innovation</p>
+                                    <p class="text-primary h6 mb-3"><i class="fa fa-check-circle text-secondary me-2"></i> Build Community</p>
                                 </div>
                                 <div class="d-flex flex-wrap">
                                     <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
@@ -183,8 +139,8 @@
                                         </a>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center">
-                                        <span class="text-primary">Have any questions?</span>
-                                        <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Free: +0123 456 7890</span>
+                                        <span class="text-primary">Faculty incharge:</span>
+                                        <span class="text-secondary fw-bold fs-5" style="letter-spacing: 2px;">Ms.C.V.Nisha Angeline: 98421 75694</span>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +162,7 @@
                                 <i class="fas fa-passport"></i>
                             </div>
                             <div class="counter-content">
-                                <h3>Visa Categories</h3>
+                                <h3>Events conducted</h3>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <span class="counter-value" data-toggle="counter-up">31</span>
                                     <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
@@ -234,7 +190,7 @@
                                 <i class="fas fa-user-check"></i>
                             </div>
                             <div class="counter-content">
-                                <h3>Visa Process</h3>
+                                <h3>Participants</h3>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <span class="counter-value" data-toggle="counter-up">4.9</span>
                                     <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">K</h4>
@@ -248,10 +204,10 @@
                                 <i class="fas fa-handshake"></i>
                             </div>
                             <div class="counter-content">
-                                <h3>Success Rates</h3>
+                                <h3>Started year</h3>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <span class="counter-value" data-toggle="counter-up">98</span>
-                                    <h4 class="text-secondary mb-0" style="font-weight: 600; font-size: 25px;">%</h4>
+                                    <span class="counter-value" data-toggle="counter-up">2013</span>
+                                
                                 </div>
                             </div>
                         </div>
@@ -261,76 +217,90 @@
         </div>
         <!-- Counter Facts End -->
 
-        <!-- Countries We Offer Start -->
-        <div class="container-fluid country overflow-hidden py-5">
-            <div class="container py-5">
-                <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">COUNTRIES WE OFFER</h5>
+       <!-- Countries We Offer Start -->
+<div class="container-fluid country overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">IOT CLUB</h5>
+            </div>
+            <h1 class="display-5 mb-4">STAFFS AND STUDENT CO-ORDINATOR</h1>
+            <p class="mb-0">The IoT Club brings together tech enthusiasts passionate about connecting the world through smart devices. Here's a glimpse of our vibrant team of students and faculty driving innovation forward.</p>
+        </div>
+        <div class="row g-4 text-center">
+
+            <style>
+                .country-item .rounded img {
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            </style>
+
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="cvnait.jpg" class="img-fluid w-100 rounded" alt="Image">
                     </div>
-                    <h1 class="display-5 mb-4">Immigration & visa services following Countries</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                </div>
-                <div class="row g-4 text-center">
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/country-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/brazil.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Brazil</a>
-                            </div>
-                        </div>
+                    <div class="country-flag">
+                        <img src="professional.jpg" class="img-fluid rounded-circle" alt="Image">
                     </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/country-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/india.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">india</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/country-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/usa.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">New York</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="country-item">
-                            <div class="rounded overflow-hidden">
-                                <img src="img/country-4.jpg" class="img-fluid w-100 rounded" alt="Image">
-                            </div>
-                            <div class="country-flag">
-                                <img src="img/italy.jpg" class="img-fluid rounded-circle" alt="Image">
-                            </div>
-                            <div class="country-name">
-                                <a href="#" class="text-white fs-4">Italy</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More Countries</a>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Ms.C.V.Nisha Angeline</a>
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="girl1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="specsgirl.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Ms. R. Thanishka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="boy.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="boys.jpg" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Mr. B. Aravind</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-3 mb-5 mb-xl-0 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="country-item">
+                    <div class="rounded overflow-hidden">
+                        <img src="girl2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                    </div>
+                    <div class="country-flag">
+                        <img src="curlygirlr.webp" class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div class="country-name">
+                        <a href="#" class="text-white fs-4">Ms. K. Varsha</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <a class="btn btn-primary border-secondary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">More members</a>
+            </div>
         </div>
-        <!-- Countries We Offer End -->
+    </div>
+</div>
+<!-- Countries We Offer End -->
+
 
 
         <!-- Training Start -->
@@ -338,56 +308,41 @@
             <div class="container py-5">
                 <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">CHECK OUR TRAINING</h5>
+                        <h5 class="sub-title text-primary px-3">OUR EVENTS</h5>
                     </div>
-                    <h1 class="display-5 mb-4">Get the Best Coacing Service Training with Our Travisa</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+                    <h1 class="display-5 mb-4">Driving Innovation Through Engaging Events</h1>
+                    <p class="mb-0">The IoT Club actively organizes and conducts workshops, seminars, and hands-on sessions to spark creativity and technical skills among students. These events provide a platform to explore real-world applications of IoT and foster collaborative learning.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="training-item">
                             <div class="training-inner">
-                                <img src="img/training-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <img src="eve1.png" class="img-fluid w-100 rounded" alt="Image">
                                 <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">IELTS</a>
-                                    <a href="#" class="h4 text-white mb-0">Coaching</a>
+                                    <a href="#" class="h4 text-white mb-0">Sensor</a>
+                                    <a href="#" class="h4 text-white mb-0">Hunt</a>
                                 </div>
                             </div>
                             <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">IELTS Coaching</h4></a>
-                                <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                                <a href="#"><h4 class="text-white">Sensor Hunt</h4></a>
+                                <p class="text-white-50">Date: Jun 10 <br> Team size: 2-3 <br> Register before: Jun 7</p>
                                 <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="training-item">
-                            <div class="training-inner">
-                                <img src="img/training-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">TOEFL</a>
-                                    <a href="#" class="h4 text-white mb-0">Coaching</a>
-                                </div>
-                            </div>
-                            <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">TOEFL Coaching</h4></a>
-                                <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
-                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="training-item">
                             <div class="training-inner">
-                                <img src="img/training-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <img src="eve3.png" class="img-fluid w-100 rounded" alt="Image">
                                 <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">PTE</a>
-                                    <a href="#" class="h4 text-white mb-0">Coaching</a>
+                                    <a href="#" class="h4 text-white mb-0">Nexus'25</a>
+
                                 </div>
                             </div>
                             <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">PTE Coaching</h4></a>
-                                <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                                <a href="#"><h4 class="text-white">Nexus'25</h4></a>
+                                <p class="text-white-50">Date: Apr 3 <br> Team size: 3-5 <br> Register before: Mar 29</p>
                                 <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -395,15 +350,31 @@
                     <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="training-item">
                             <div class="training-inner">
-                                <img src="img/training-4.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <img src="eve4.png" class="img-fluid w-100 rounded" alt="Image">
                                 <div class="training-title-name">
-                                    <a href="#" class="h4 text-white mb-0">OET</a>
-                                    <a href="#" class="h4 text-white mb-0">Coaching</a>
+                                    <a href="#" class="h4 text-white mb-0">Connexions</a>
+
                                 </div>
                             </div>
                             <div class="training-content bg-secondary rounded-bottom p-4">
-                                <a href="#"><h4 class="text-white">OET Coaching</h4></a>
-                                <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis.</p>
+                                <a href="#"><h4 class="text-white">Connexions</h4></a>
+                                <p class="text-white-50">Date: Feb 4 <br> Team size: 2-3 <br> Register before: Jan 2</p>
+                                <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="training-item">
+                            <div class="training-inner">
+                                <img src="eve5.png" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="training-title-name">
+                                    <a href="#" class="h4 text-white mb-0">What if</a>
+                                    <a href="#" class="h4 text-white mb-0">with Tech</a>
+                                </div>
+                            </div>
+                            <div class="training-content bg-secondary rounded-bottom p-4">
+                                <a href="#"><h4 class="text-white">What if with Tech</h4></a>
+                                <p class="text-white-50">Date: Nov 18 <br> Team size: 1-2 <br> Register before: Nov 17</p>
                                 <a class="btn btn-secondary rounded-pill text-white p-0" href="#">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -416,86 +387,44 @@
         </div>
         <!-- Training End -->
 
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
-                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Opening Time</h4>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
-                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Satday:</h6>
-                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
-                            </div>
-                            <div class="mb-3">
-                                <h6 class="text-muted mb-0">Vacation:</h6>
-                                <p class="text-white mb-0">All Sunday is our vacation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item d-flex flex-column">
-                            <h4 class="text-secondary mb-4">Our Services</h4>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Business</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Evaluation</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Migrate</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Study</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Counselling</a>
-                            <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Work / Career</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-secondary mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="position-relative mx-auto rounded-pill">
-                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <!-- Footer Start -->
+<div class="container-fluid" style="background-color: #800000; color: white; padding: 40px 0;">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Contact Info -->
+      <div class="col-md-6 col-lg-4">
+        <h4 style="color: #B34747; margin-bottom: 20px;">Contact Info</h4>
+        <p><i class="fa fa-map-marker-alt me-2" style="color: #B34747;"></i>123 College Road, Chennai, India</p>
+        <p><i class="fas fa-envelope me-2" style="color: #B34747;"></i>info@tce.edu.in</p>
+        <p><i class="fas fa-phone me-2" style="color: #B34747;"></i>+91 44 1234 5678</p>
+      </div>
+
+      <!-- Opening Time -->
+      <div class="col-md-6 col-lg-4">
+        <h4 style="color: #B34747; margin-bottom: 20px;">Opening Time</h4>
+        <p>Monday - Friday: 9:00 AM to 5:00 PM</p>
+        <p>Saturday: 9:00 AM to 1:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-12 col-lg-4 d-flex flex-column">
+        <h4 style="color: #B34747; margin-bottom: 20px;">Connect With Us</h4>
+        <div>
+          <a href="#" style="color: white; margin-right: 15px; font-size: 1.5rem;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: white; margin-right: 15px; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: white; margin-right: 15px; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
+      </div>
+    </div>
+    <hr style="border-color: #B34747; margin: 30px 0;">
+    <div class="text-center" style="color: white; font-size: 0.9rem;">
+      &copy; 2025 TCE College. All Rights Reserved.
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
